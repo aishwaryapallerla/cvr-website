@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>College Website</title>
+<style>
+  /* Reset & base styles */
+  body {
+    
+    margin: 0; padding: 0;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+  }
+  #logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  #college-name {
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  nav {
+    background-color: #FFD700;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    display: block;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    background-color:#FFC300;
+  }
+  main {
+    padding: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th {
+    background-color: #FFD700;
+    color: white;
+  }
+
+  @media(max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 5px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img id="logo" src="https://static.wixstatic.com/media/a86348_9c9d6f1c2f5d4a90bd86f2ac5294f794~mv2.webp/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a86348_9c9d6f1c2f5d4a90bd86f2ac5294f794~mv2.webp" alt="College Logo" />
+  <div id="college-name">CVR College of Engineering</div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#" onclick="showSection('home')">Home</a></li>
+    <li><a href="#" onclick="showSection('about')">About Us</a></li>
+    <li><a href="#" onclick="showSection('academics')">Academics</a></li>
+    <li><a href="#" onclick="showSection('department')">Department</a></li>
+    <li><a href="#" onclick="showSection('research')">Research</a></li>
+    <li><a href="#" onclick="showSection('placements')">Placements</a></li>
+    <li><a href="#" onclick="showSection('more')">More</a></li>
+    <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="home" class="content-section">
+    <h2>Welcome to CVR College of Engineering</h2>
+    <p>The Cherabuddi Education Society was registered in January 1999 as an NRI-promoted society. The Society  aims at creating a state-of-the-art engineering institution in association with leading NRI technology professionals and well-known academicians of the twin states of Telangana & Andhra Pradesh.  The Society aims to harness technical excellence with a commitment to the ethos of 'useful learning'.
+
+Our students remain at the heart of our vision, benefiting from our innovative teaching methods, and close links with premier companies and research institutions in India and abroad. Students will enjoy engineering and will have the chance to develop skills that will last a lifetime.</p>
+  </section>
+
+  <section id="about" class="content-section" style="display:none;">
+    <h2>About Us</h2>
+    <p>CVR College of Engineering was established in 2001...
+      Cherabuddi Education Society
+ 
+The Cherabuddi Education Society aims at creating a state-of-the-art engineering institution in association with leading NRI technology professionals and well-known academicians of the twin states of Telangana & Andhra Pradesh. The Society aims to harness technical excellence and financial power of NRIs in making CVR College of Engineering a pre-eminent technical institution.
+
+NRI Members
+
+Dr. Raghava V Cherabuddi
+
+Dr. Raghava is a BE (CSE), MS (Computer Science), MS (Computer Engineering) and PhD (Computer Engineering, USA). He was most recently with Microsoft Corporation, Hyderabad as an Academic Alliance Manager for nearly two years. Previously he was with Intel Corporation in the US for about 12 years. He has published over 10 papers in international conferences. After living in the USA for 16 years, he had relocated back to India to contribute to the technological advancement of the state.
+
+Dr. Noel N Deep
+
+Dr. Noel Deep, MBBS, MD, FACP is a board certified Internal Medicine specialist in Antigo, Wisconsin, USA. He is the Chief of Staff and Member of the Board of Trustees of Langlade Hospital. He also serves on the American College of Physicians Board of Regents and is the current Chair of the ACP's national Council of Young Physicians. He is the recipient of several national and state awards including the American College of Physicians 2010 Walter McDonald Young Physician Leadership award and the 2009 American Medical Association's Young Physician Leadership award.
+
+Smt. Sujana Cherabuddi
+
+Smt Sujana is a BE (CSE) and MS (Computer Science, USA). She was with Cisco Systems, San Jose, California, for over 10 years where she was a technical lead. She is the Honorary Secretary of the Cherabuddi Education Society.
+
+Dr. Lakshmi Deep
+
+Dr. Lakshmi Deep is an MBBS, ECFMG and MD (USA). She is an Internal Medicine specialist at the General Clinic, Community Health Care, Wisconsin, USA.
+
+Dr. Rakesh Lattupalli
+
+Dr. Rakesh Lattupalli graduated from Osmania Medical College in India and finished residency (MD) in Internal medicine and worked as a hospitalist before finishing his fellowship in Nephrology and Hypertension at St John Hospital and Medical Center, Detroit, Michigan, USA. He is also a UNOS (United Network for Organ Sharing) certified Transplant Nephrologist. Most recently Dr. Lattupalli has served as Senior Staff & Faculty, Division of Nephrology & Hypertension, Henry Ford Hospital Detroit campus and held tenure of Clinical Assistant Professor at Wayne State School of Medicine. He currently teaches Internal Medicine residents and medical students at St John Macomb hospital.
+
+Indian Members
+
+Dr. Chukka Ramaiah
+
+Dr. Ramaiah is former Principal of Andhra Pradesh Residential Degree College. Currently he is the Hon’ble M.L.C. and the Director of Ramaiah's IIT Study Circle, which sends over 100 students to the prestigious IITs every year.
+
+Prof.  Pannalal
+
+Prof. Pannalal was most recently the Registrar of Osmania University. Earlier, he was a Professor at the Department of Business Management, College of Commerce and Business Management, Osmania University.
+
+Dr. Vijaya Hegde
+
+Dr. Hedge is Director of the well-known Hegde's Maternity and Nursing Home. She has also been the CMO of Andhra Mahila Sabha (AMS) Hospital for over three decades.
+ 
+
+Advisors
+
+Dr. C. Madhusudana Reddy
+
+Dr. Reddy is Former Emeritus Fellow of AICTE at Osmania University. He was the Professor and Head, Department of Business Management, Osmania University. He has been instrumental in the establishment of several IT courses in Andhra Pradesh, especially the PGDMISCA program.
+
+Dr. Magdy Bayoumi
+
+An IEEE Fellow, Dr. Bayoumi is Director of the Center of Advanced Computer Studies at the University of Louisiana at Lafayette, USA, and also a Professor of Computer Engineering. He is an honorary recipient of the Fellow of IEEE and was one of the leading developers of Very Large Scale Integration (VLSI) Design in the 70s and 80s.</p>
+  </section>
+
+  <section id="academics" class="content-section" style="display:none;">
+    <h2>Academics</h2>
+    <p>Courses Offered for the Academic Year 2024-25
+B.Tech.
+Civil Engineering 30 seats
+Computer Science and Business Systems     60 seats
+Computer Science and Engineering    600 seats
+Computer Science and Engineering (AI & ML)      240 seats
+Computer Science and Engineering (Data Science) 240 seats
+Computer Science and Engineering (Cyber Security)     180 seats
+Electronics and Communication Engineering 120 seats
+Electronics Engineering (VLSI Design & Technology)    60 seats
+Electrical and Electronics Engineering    30 seats
+Electronics and Instrumentation Engineering     30 seats
+Information Technology  180* seats
+Mechanical Engineering  30 seats
+ 
+
+B.Tech. with Minor Degree
+
+Minor Degree in Artificial Intelligence and Machine Learning (AI&ML), Cyber Security (CS), Data Science (DS) and Internet of Things (IoT)
+
+CVR College of Engineering offers B.Tech. courses in Civil, CSBS, CSE, CSE (Artificial Intelligence and Machine Learning), CSE (Cyber Security), CSE (Data Science), ECE, EEE, EE (VLSI), EIE, IT and Mechanical Engineering. One of the recommendations of the National Education Policy 2020 of the Government of India is to offer interdisciplinary courses at all levels of study for comprehensive and far reaching proficiency of students. The AICTE recommends that a student be provided genuine choice in Minor subject.
+
+At CVRCE, all B.Tech. students are provided options to take-up Minor programme in Artificial Intelligence & Machine Learning, Cyber Security, Data Science and Internet of Things from third year.
+
+Such flexibility enhances opportunities of graduates in employment in multidisciplinary areas such as Robotics for ME and 3D printing for CE students, to mention a few.
+
+Students with Major CSE (Artificial Intelligence & Machine Learning), CSE (Cyber Security), CSE (Data Science) are eligible to take-up Minor programmes other than their own to gain knowledge in other advanced subjects along with their own, example being Students of B.Tech. Major in CSE (AI&ML) are eligible for Minor in Cyber Security or Data Science or IoT.
+
+Students need to obtain 160 credits for B.Tech. in Major programme and 18 Credits to qualify for Minor degree.
+
+Students of current Generation, opportunities are aplenty, it is for you to grab them at the right time and be equipped with skills and competencies to qualify for ever changing needs of the industry across the globe.
+
+Civil Engineering with Minor in AIML
+Civil Engineering with Minor in Cyber Security
+Civil Engineering with Minor in Data Science
+Civil Engineering with Minor in IoT
+Electrical and Electronics Engineering with Minor in AIML
+Electrical and Electronics Engineering with Minor in Cyber Security
+Electrical and Electronics Engineering with Minor in Data Science
+Electrical and Electronics Engineering with Minor in IoT
+Electronics and Communication Engineering with Minor in AIML
+Electronics and Communication Engineering with Minor in Cyber Security
+Electronics and Communication Engineering with Minor in Data Science
+Electronics and Communication Engineering with Minor in IoT
+Electronics Engineering (VLSI Design & Technology) with Minor in AIML
+Electronics Engineering (VLSI Design & Technology) with Minor in Cyber Security
+Electronics Engineering (VLSI Design & Technology) with Minor in Data Science
+Electronics Engineering (VLSI Design & Technology) with Minor in IoT
+Electronics and Instrumentation Engineering with Minor in AIML
+Electronics and Instrumentation Engineering with Minor in Cyber Security
+Electronics and Instrumentation Engineering with Minor in Data Science
+Electronics and Instrumentation Engineering with Minor in IoT
+Mechanical Engineering with Minor in AIML
+Mechanical Engineering with Minor in Cyber Security
+Mechanical Engineering with Minor in Data Science
+Mechanical Engineering with Minor in IoT
+M.Tech.
+Artificial Intelligence 18 seats
+Data Sciences     18 seats
+Electrical Power Engineering  18 seats
+Embedded Systems  18 seats
+Structural Engineering  18 seats
+VLSI Design 18 seats
+ 
+
+Ph.D. Candidates in Research Centres of CSE and ECE **
+CSE
+ECE
+ 
+
+* 60 approved by State Government, 120 yet to be approved
+
+** Affiliating University selects the Research Scholars and allots to college to admit the candidates.</p>
+  </section>
+
+  <section id="department" class="content-section" style="display:none;">
+    <h2>Department - Faculty Information (Software Application)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Qualification</th>
+          <th>Specialization</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dr. A. Ramesh</td>
+          <td>Professor</td>
+          <td>Ph.D. (CS)</td>
+          <td>Software Engineering</td>
+          <td>ramesh@cvr.ac.in</td>
+        </tr>
+        <tr>
+          <td>Ms. S. Priya</td>
+          <td>Associate Professor</td>
+          <td>M.Tech (Software)</td>
+          <td>Data Analytics</td>
+          <td>priya@cvr.ac.in</td>
+        </tr>
+        <tr>
+          <td>Mr. K. Kumar</td>
+          <td>Assistant Professor</td>
+          <td>M.Tech (IT)</td>
+          <td>Machine Learning</td>
+          <td>kumar@cvr.ac.in</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="research" class="content-section" style="display:none;">
+    <h2>Research</h2>
+    <p>The College has a well defined policy for research which covers research facilities and incentives. The college provides good infrastructure, high configuration computers and equipment to design and development of Research Projects. The College granted seed money and established EDC/NewGen Incubation Center, UAV  Design Center, Centers for Advanced Antenna Design and Nano Technology Materials Research, with advanced software and equipment. College promotes innovation as evidenced by filing of numerous patents with financial support and incentives.
+
+The College provides paid study leave for a period of 6 months three times during Ph.D., an allowance of Rs. 60,000 and an incentive of Rs. 25,000 at three stages of Ph.D. scholars. Digital Library/e-Resource access is provided to students and faculty members.
+
+CVR Journal of Science & Technology was started in 2011 and publications in standard journals are encouraged. The Institution  ensures  implementation of code of ethics for research and more than 2000 research papers have been published in SCOPUS and Web of Science Journals. 22 professors have been identified as guides/supervisors. The College regularly organizes workshops/seminars on Research Methodology, IPR, Entrepreneurship and Skill Development.</p>
+  </section>
+
+  <section id="placements" class="content-section" style="display:none;">
+    <h2>Placements</h2>
+    <p>The College has a Centre for Student Services and Placement, which gives personal and career counseling to the students. The idea is to enable students to effectively cope with life at College as well as in their career. One of the major objectives of the centre is to help students in obtaining internships and placements in reputed companies across various industrial sectors. Assistance is also provided to students in procuring higher education opportunities. The College offers special coaching for GATE, TOEFL, and GRE to its students. They are also encouraged to present technical papers at seminars in other colleges with a view to improving their research and presentation skills. Also, during the last few years, several personality development programs have been conducted by experts from industry.
+
+CVR’ites managed to grab the highest number of recruitments among similar aged institutions. For the 9th year in a row, CVR students have outshined 10s of colleges in securing the highest number of placements in several pool and On Campus recruitment drives.
+</p>
+<div id="company-logos">
+    <h3>Our Recruiters</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXVDEyxGGiZWlzJIV4roTnB7oRqRhygpCJA&s" alt="Infosys Logo" width="120" height="60" />
+    <img src="https://www.cdnlogo.com/logos/t/26/tcs.svg" alt="TCS Logo" width="120" height="60" />
+    <img src="https://www.wipro.com/content/dam/nexus/en/brand/images/secondary-logo-400x276.png" alt="Wipro Logo" width="120" height="60" />
+    <img src="https://blog.logomaster.ai/hubfs/Microsoft-logo-cover.jpg" alt="Microsoft Logo" width="120" height="60" />
+  </div>
+  </section>
+
+<section id="more" class="content-section" style="display:none;">
+  <h2>More</h2>
+  <p>Additional information about college events, clubs, and activities.</p>
+  <div id="clubs-logos">
+    <h3>Our Clubs</h3>
+    <img src="https://img.freepik.com/premium-vector/chess-club-logo-vector-vintage-illustration-sign-symbol_1137226-316.jpg" alt="Chess Club Logo" width="80" height="80" />
+    <img src="https://i.pinimg.com/originals/5e/43/b6/5e43b6b76aef45d5da1bb760c32ad049.png" alt="Robotics Club Logo" width="80" height="80" />
+    <img src="https://www.shutterstock.com/shutterstock/photos/1799107846/display_1500/stock-vector-creatively-made-logo-of-a-coding-club-conveying-a-deep-meaning-using-symbols-from-programming-and-1799107846.jpg" alt="Coding Club Logo" width="80" height="80" />
+  </div>
+</section>
+
+  <section id="contact" class="content-section" style="display:none;">
+    <h2>Contact Us</h2>
+    <address>
+      CVR College of Engineering<br />
+      Ibrahimpatnam, Hyderabad, Telangana<br />
+      Phone: +91 40 1234 5678<br />
+      Email: info@cvr.ac.in
+    </address>
+  </section>
+</main>
+
+<script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(sec => {
+      sec.style.display = sec.id === sectionId ? 'block' : 'none';
+    });
+  }
+</script>
+
+</body>
+</html>
